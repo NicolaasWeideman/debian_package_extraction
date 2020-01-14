@@ -51,7 +51,7 @@ def main():
             if del_nonelfs:
                 print("\r{}".format(' ' * os.get_terminal_size()[0]), end='\r', flush=True)
                 print("({} / {}) Deleting non-elfs {}".format(i + 1, total, dest_dir), end='', flush=True)
-				delete_non_elfs(dest_dir)
+                delete_non_elfs(dest_dir)
     print("")
     global_end_time = time.localtime()
     print("Finished on: {}".format(time.strftime(TIME_FORMAT, global_end_time)))
@@ -106,4 +106,3 @@ def format_time_delta(start_time, end_time, short=False):
 
 if __name__ == "__main__":
     main()
-		
